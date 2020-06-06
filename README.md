@@ -15,7 +15,6 @@ In __UpdateError()__ function,
    d_error = cte - p_error; 
    p_error = cte;
    i_error = i_error + cte;
-
 }`
 
 In __TotalError()__ funcrion, Each part is multiplied with choosen parameter and summed up to find the total error.
