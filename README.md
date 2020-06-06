@@ -11,11 +11,10 @@ In __UpdateError()__ function,
 * proportional error part depends only on current cte
 * integral error part is calculated by summation of cte at each instance.
 
-`void PID::UpdateError(double cte) {
-   d_error = cte - p_error; 
-   p_error = cte;
-   i_error = i_error + cte;
-
+`void PID::UpdateError(double cte) {  
+   d_error = cte - p_error;   
+   p_error = cte;  
+   i_error = i_error + cte;  
 }`
 
 In __TotalError()__ funcrion, Each part is multiplied with choosen parameter and summed up to find the total error.
