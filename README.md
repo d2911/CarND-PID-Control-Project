@@ -6,19 +6,19 @@ Control the stearing angle of the car to make it stay in the center of lane usin
 
 Cross Track Error (cte) is provided by simulator. On each raster, cte is used to determine the Proportional part, integral part and differential part of the error. Each part is multiplied with choosen parameter and summed up to find the total error.
 
-In __UpdateError()__ function, 
+In __UpdateError()__ function,
 * differetial error part is calculated by subtracting current cte with previous cte.
 * proportional error part depends only on current cte
 * integral error part is calculated by summation of cte at each instance.
 
 `void PID::UpdateError(double cte) {
-   d_error = cte - p_error; //using p_error as prev_cte
+   d_error = cte - p_error; 
    p_error = cte;
    i_error = i_error + cte;
 
-}`  
+}`
 
-In __TotalError()__, Each part is multiplied with choosen parameter and summed up to find the total error.
+In __TotalError()__ funcrion, Each part is multiplied with choosen parameter and summed up to find the total error.
 
 `double PID::TotalError() {
   double total_error = -(p_error * Kp) - (d_error * Kd) - (i_error * Ki);
