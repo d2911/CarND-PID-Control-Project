@@ -43,7 +43,7 @@ CTE and error correction by PID controller are plotted against a graph to see ho
 ![](/misc/pid.png)
 Fig 1: Graph Plot for PID control with parameter values kp = 0.2, ki = 0.004 and kd =3.0
 
-![](/misc/pid.gif)
+![](/misc/Pid.gif)
 
 ## Dependencies
 
