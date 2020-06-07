@@ -63,6 +63,13 @@ Fig 3.1: Graph Plot for P control with parameter values kp = 0.2, ki = 0.0 and k
 Fig 3.2: Visualising how car is stearing with these parameters.  
 ![](/misc/P.gif)
 
+### Inference
+
+We can clearly see from the three graphs, 
+* In PID initially CTE tend to be more and when the number of iteration increases CTE is less than 0.5. 
+* In PD this looks to perform better but at curves CTE is moving gretaer than 0.5.
+* In P CTE is always oscillating btween positive and negative.
+
 ## Dependencies
 
 * cmake >= 3.5
