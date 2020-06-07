@@ -34,6 +34,17 @@ Steaing angle to simulator should be in the rangle -1 to 1 and so calculate tota
 
 `steer_value = std::min(std::max(steer_value_temp,-1.0),1.0);`
 
+## Discussing on P, I and D components
+
+CTE and error correction by PID controller are plotted against a graph to see how each component affects the control on stearing angle. For this analysis vehcile speed is set at 20mph.
+
+### PID
+
+![](/misc/pid.png)
+Fig 1: Graph Plot for PID control with parameter values kp = 0.2, ki = 0.004 and kd =3.0
+
+![](/misc/pid.gif)
+
 ## Dependencies
 
 * cmake >= 3.5
