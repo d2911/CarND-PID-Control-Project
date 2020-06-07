@@ -39,11 +39,29 @@ Steaing angle to simulator should be in the rangle -1 to 1 and so calculate tota
 CTE and error correction by PID controller are plotted against a graph to see how each component affects the control on stearing angle. For this analysis vehcile speed is set at 20mph.
 
 ### PID
-
+Fig 1.1: Graph Plot for PID control with parameter values kp = 0.2, ki = 0.004 and kd =3.0. In final submission ki with 0.0004 is much smoother.
 ![](/misc/pid.png)
-Fig 1: Graph Plot for PID control with parameter values kp = 0.2, ki = 0.004 and kd =3.0
 
+Fig 1.2: Visualising how car is stearing with these parameters.
 ![](/misc/Pid.gif)
+
+### PD
+In this section lets see how car behaves without I component.  
+
+Fig 2.1: Graph Plot for PD control with parameter values kp = 0.2, ki = 0.000 and kd =3.0. 
+![](/misc/pd.png)
+
+Fig 2.2: Visualising how car is stearing with these parameters.
+![](/misc/Pd.gif)
+
+### P
+In this section lets see how car behaves without D and I component.  
+
+Fig 3.1: Graph Plot for P control with parameter values kp = 0.2, ki = 0.0 and kd =0.0. 
+![](/misc/p.png)
+
+Fig 3.2: Visualising how car is stearing with these parameters.
+![](/misc/P.gif)
 
 ## Dependencies
 
